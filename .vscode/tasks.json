@@ -6,13 +6,24 @@
         {
             "label": "Run gulp build",
             "type": "shell",
-            "args": ["gulp", "build"],
+            "args": [
+                "gulp",
+                "build"
+            ],
             "isBackground": true,
             "problemMatcher": "$eslint-stylish",
             "presentation": {
                 "reveal": "always",
                 "panel": "new"
             }
+        },
+        {
+            "type": "npm",
+            "script": "build",
+            "group": "build",
+            "problemMatcher": [],
+            "label": "npm: build",
+            "detail": "./node_modules/.bin/gulp"
         }
     ]
 }
