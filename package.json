@@ -29,7 +29,11 @@
     },
     "extensionDependencies": [],
     "isAMD": false,
-    "scripts": {},
+    "scripts": {
+        "build": "./node_modules/.bin/gulp",
+        "postinstall": "node ./node_modules/vscode/bin/install",
+        "usage": "node ./src/tool/gene-keybind-markdown.js"
+    },
     "icon": "index.png",
     "license": "MIT",
     "homepage": "https://github.com/kasecato/vscode-intellij-idea-keybindings#readme",
